@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nats-streaming:
+    image: nats-streaming:latest
+    command: ["--cluster_id=insight360"]
+    ports:
+      - "4222:4222"
+      - "8222:8222"
